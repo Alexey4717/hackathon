@@ -1,0 +1,23 @@
+// BREAKPOINTS
+$screen-xs: 360px;
+$screen-xs-sm: 411px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-lg: 992px;
+
+// VARIABLES FOR MODULES STYLES IN COMPONENTS
+body {
+  --blockWidth: 100px;
+  --screen-lg: 992px;
+
+  // COLORS
+  --primary: #5600B4;
+  --secondary: #5C00E8;
+  --primary-text: #6B00B3;
+  --secondary-text: #76767A;
+  --gray: #A7A8AB;
+  --red: #D51A1A;
+  --warning_orange: #FF9500;
+}
