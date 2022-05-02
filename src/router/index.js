@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router"
-import Main from '@/views/Main.vue'
+import Home from '@/views/Home.vue'
 import LayoutDeveloper from '@/views/LayoutDeveloper.vue'
 import FrontendDeveloper from '@/views/FrontendDeveloper.vue'
 import PythonProgrammer from '@/views/PythonProgrammer.vue'
@@ -12,8 +12,8 @@ const routes = [
   {
     // Главная
     path: "/",
-    name: "Main",
-    component: Main
+    name: "Home",
+    component: Home
   },
   {
     // Верстальщик
