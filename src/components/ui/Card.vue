@@ -31,6 +31,8 @@ export default {
   box-shadow: 0px 0px 0 black;
   margin-top: 24px;
   cursor: pointer;
+  transition: box-shadow 300ms, transform 300ms;
+  
   &:hover {
     box-shadow: -10px 10px 0 black;
     transform: translate(5px, -5px);

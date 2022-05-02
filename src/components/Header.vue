@@ -1,11 +1,11 @@
 <template>
-  <div :class="$style.wrapper">
+  <header :class="$style.wrapper">
     <div class="container">
       <router-link to="/">
         <img src="@/assets/images/logo.png" alt="logo" />
       </router-link>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>

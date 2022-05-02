@@ -1,8 +1,8 @@
 <template>
   <Header />
-  <div class="container" :class="$style.wrapper">
+  <main class="container" :class="$style.wrapper">
     <slot />
-  </div>
+  </main>
   <Footer />
 </template>
 
@@ -20,6 +20,6 @@ export default {
 </script>
 <style lang="scss" module>
 .wrapper {
-  padding: 40px 0;
+  //padding: 40px 0;
 }
 </style>
