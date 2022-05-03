@@ -2,7 +2,7 @@
   <div :class="$style.block">
     <img
       :class="$style.image"
-      src="@/assets/images/education.png"
+      src="@/assets/images/people.webp"
       alt="education"
     />
     <div :class="$style.descriptions">
@@ -39,14 +39,15 @@ export default {
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 70px 0;
 }
 .image {
   position: absolute;
   top: 0;
   right: -0.5px;
   width: 500px;
+  height: 500px;
   clip-path: polygon(0 0, 100% 0, 100% 53%, 0% 100%);
+  object-fit: cover;
 }
 
 .descriptions {

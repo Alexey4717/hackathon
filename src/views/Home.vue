@@ -1,21 +1,24 @@
 <template>
   <div>
-    <hackathon-presentation/>
-    <cards/>
+    <hackathon-presentation />
+    <about-hackathon />
+    <cards />
   </div>
 </template>
 
 <script>
-import HackathonPresentation from "@/components/blocks/HackathonPresentation"
-import Cards from "@/components/blocks/Cards"
+import HackathonPresentation from "@/components/blocks/HackathonPresentation";
+import AboutHackathon from "@/components/blocks/AboutHackathon";
+import Cards from "@/components/blocks/Cards";
 
-document.title = 'Хакатон цифровых профессий'
+document.title = "Хакатон цифровых профессий";
 
 export default {
   name: "Home",
   components: {
+    HackathonPresentation,
+    AboutHackathon,
     Cards,
-    HackathonPresentation
-  }
+  },
 };
 </script>
