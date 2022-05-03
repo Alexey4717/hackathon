@@ -3,6 +3,8 @@
     <hackathon-presentation />
     <about-hackathon />
     <cards />
+    <cases-example />
+    <participation />
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import HackathonPresentation from "@/components/blocks/HackathonPresentation";
 import AboutHackathon from "@/components/blocks/AboutHackathon";
 import Cards from "@/components/blocks/Cards";
+import CasesExample from "@/components/blocks/CasesExample"
+import Participation from "@/components/blocks/Participation"
 
 document.title = "Хакатон цифровых профессий";
 
@@ -19,6 +23,8 @@ export default {
     HackathonPresentation,
     AboutHackathon,
     Cards,
+    CasesExample,
+    Participation
   },
 };
 </script>
