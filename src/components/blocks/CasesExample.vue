@@ -2,18 +2,18 @@
   <div :class="$style.block">
     <img :class="$style.image" src="@/assets/images/case.png" alt="case" />
     <div :class="$style.descriptions">
-      <span :class="$style.heading"
+      <h3 :class="$style.heading"
         >Примеры заданий (кейсов) от коммерческих компаний могут быть
-        следующие:</span
+        следующие:</h3
       >
       <p :class="$style.description">
         <b>Разработка мобильного приложения</b> по доставке воды или продуктов с
         оптимизацией маршрута в городской и пригородной территории (с
         подключением доступных API геосервисов, например, Яндекс.Карты)
       </p>
-      <span :class="$style.heading"
+      <h3 :class="$style.heading"
         >Какие цифровые компетенции (профессии) можно задействовать при решении
-        такого кейса?</span
+        такого кейса?</h3
       >
       <ul :class="$style.description">
         <li>Программирование (React Native или IOS / Android)</li>
@@ -52,7 +52,6 @@ export default {
 }
 
 .heading {
-  display: block;
   color: var(--primary-text);
   font-size: 32px;
   font-weight: bold;

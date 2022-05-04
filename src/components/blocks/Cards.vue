@@ -1,7 +1,7 @@
 <template>
-  <h2 :class="$style.heading">
+  <h3 :class="$style.heading">
     Направления по созданию кейсов, учавствующие в хакатоне:
-  </h2>
+  </h3>
   <div :class="$style.wrapper">
     <card
       v-for="card in cards"

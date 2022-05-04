@@ -5,6 +5,9 @@
     <cards />
     <cases-example />
     <participation />
+    <participants kind="case-givers" />
+    <participants kind="partners" />
+    <cooperation-proposals />
   </div>
 </template>
 
@@ -14,6 +17,8 @@ import AboutHackathon from "@/components/blocks/AboutHackathon";
 import Cards from "@/components/blocks/Cards";
 import CasesExample from "@/components/blocks/CasesExample"
 import Participation from "@/components/blocks/Participation"
+import Participants from "@/components/blocks/Participants"
+import CooperationProposals from "@/components/blocks/CooperationProposals"
 
 document.title = "Хакатон цифровых профессий";
 
@@ -25,6 +30,8 @@ export default {
     Cards,
     CasesExample,
     Participation,
+    Participants,
+    CooperationProposals
   },
 };
 </script>

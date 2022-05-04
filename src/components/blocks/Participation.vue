@@ -6,11 +6,11 @@
       alt="participation"
     />
     <div :class="$style.descriptions">
-      <span :class="$style.heading">
+      <h3 :class="$style.heading">
         Что даёт участие в 
         <span :class="$style.secondary">хакатоне</span>&nbsp;
         <span :class="$style.primary">цифровых профессий?</span>
-      </span>
+      </h3>
       <div :class="$style.participations">
         <participation-item
           v-for="participation in participations"

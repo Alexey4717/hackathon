@@ -6,9 +6,9 @@
       alt="education"
     />
     <div :class="$style.descriptions">
-      <span :class="$style.heading">
+      <h3 :class="$style.heading">
         Проект по поддержке <br />талантливой молодёжи Хабаровского края
-      </span>
+      </h3>
       <span :class="$style.description">Хакатон</span>
       <span :class="$style.description">цифровых профессий</span>
       <span :class="$style.description">far code</span>
@@ -55,7 +55,6 @@ export default {
 }
 
 .heading {
-  display: block;
   font-size: 20px;
   max-width: 500px;
   padding-bottom: 40px;

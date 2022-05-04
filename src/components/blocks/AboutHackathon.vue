@@ -1,7 +1,7 @@
 <template>
 <div :class="$style.block">
   <div :class="$style.left_block">
-    <span :class="$style.heading">Концепция</span>
+    <h3 :class="$style.heading">Концепция</h3>
     <p :class="$style.question">Что такое хакатон цифровых профессий?</p>
     <p :class="$style.description">
       Это мероприятие, где команды, состоящие из молодых людей создают прототипы
@@ -34,7 +34,6 @@ export default {
 }
 
 .heading {
-  display: block;
   font-size: 76px;
   font-weight: bold;
 }
