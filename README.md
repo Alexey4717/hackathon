@@ -1,4 +1,4 @@
-# [Демо проекта](https://hackathon-36nws6fba-alexey4717.vercel.app/)
+# [Демо проекта](https://hackathon-wm7gsubgy-alexey4717.vercel.app/)
 
 # Vue 3 + Vite
 
