@@ -2,16 +2,20 @@
   <footer :class="$style.wrapper">
     <div class="container">
       <router-link to="/">
-        <img src="@/assets/images/logo.png" alt="logo" />
+        <logo-icon />
       </router-link>
     </div>
   </footer>
 </template>
 
 <script>
+import LogoIcon from "@/components/icons/LogoIcon"
 
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  components: {
+    LogoIcon
+  }
 }
 </script>
 

@@ -24,7 +24,7 @@ export default {
     AboutHackathon,
     Cards,
     CasesExample,
-    Participation
+    Participation,
   },
 };
 </script>
