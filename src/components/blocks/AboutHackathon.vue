@@ -26,6 +26,7 @@ export default {
 .block {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .left_block {

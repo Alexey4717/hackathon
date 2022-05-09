@@ -12,9 +12,9 @@
       <span :class="$style.description">Хакатон</span>
       <span :class="$style.description">цифровых профессий</span>
       <span :class="$style.description">far code</span>
-      <span :class="$style.contact__header">Контакт</span>
-      <span :class="$style.contact__name">Бовкалов Константин</span>
-      <contact />
+      <animated-button @click.prevent="scrollPageTo('cases')">
+        Выбрать кейс
+      </animated-button>
     </div>
 
     <div :class="$style.blue_block">
@@ -25,11 +25,14 @@
 </template>
 
 <script>
-import Contact from "@/components/ui/Contact";
+import AnimatedButton from "@/components/ui/AnimatedButton";
 export default {
   name: "HackathonPresentation",
   components: {
-    Contact,
+    AnimatedButton,
+  },
+  props: {
+    scrollPageTo: Function,
   },
 };
 </script>
@@ -76,20 +79,8 @@ export default {
     font-size: 56px;
     color: var(--primary-text);
     text-transform: uppercase;
+    padding-bottom: 150px;
   }
-}
-
-.contact__header {
-  display: block;
-  font-size: 32px;
-  font-weight: bold;
-  padding-top: 100px;
-}
-
-.contact__name {
-  display: block;
-  font-size: 26px;
-  padding: 10px 0;
 }
 
 .blue_block {

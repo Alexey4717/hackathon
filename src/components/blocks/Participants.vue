@@ -7,11 +7,12 @@
       <span :class="$style.primary">Хакатон </span>
       <span :class="$style.secondary">цифровых профессий</span>
     </h3>
-    <div :class="$style.participants" v-if="kind === 'case-givers'">
+    <div :class="$style.participants" v-if="kind === 'case-givers'" name="Кейсодатель">
       <participant
         v-for="participant in caseGivers"
         :key="participant.title"
         :title="participant.title"
+        :icon="participant.icon"
         role="Кейсодатель"
       />
     </div>
@@ -20,6 +21,7 @@
         v-for="participant in partners"
         :key="participant.title"
         :title="participant.title"
+        :icon="participant.icon"
         role="Партнёр"
       />
     </div>
@@ -28,6 +30,15 @@
 
 <script>
 import Participant from "@/components/ui/Participant";
+import fogstream from '@/assets/images/fogstream.svg';
+import rasa from '@/assets/images/rasa.svg';
+import optiacs from '@/assets/images/optiacs.png';
+import digitalLife from '@/assets/images/digital-life.svg';
+import sintezPlus from '@/assets/images/sintez_plus.webp';
+import rzd from '@/assets/images/rzd.svg';
+import hiTech from '@/assets/images/hi-tech.png';
+import apiri from '@/assets/images/apiri.png';
+import sber from '@/assets/images/sber.png';
 
 export default {
   name: "Participants",
@@ -41,42 +52,42 @@ export default {
     return {
       caseGivers: [
         {
-          icon: "",
+          icon: fogstream,
           title: "IT-компания Fogstream.ru",
         },
         {
-          icon: "",
+          icon: rasa,
           title: "Интернет-агенство RASA.PRO",
         },
         {
-          icon: "",
+          icon: optiacs,
           title: "IT-компания optiacs.com",
         },
         {
-          icon: "",
+          icon: digitalLife,
           title: "IT-компания DIGITAL LIFE",
         },
         {
-          icon: "",
+          icon: sintezPlus,
           title: "Инженерно-технический центр Синтез-Плюс eco-dv.ru",
         },
         {
-          icon: "",
+          icon: rzd,
           title: 'ДВЖД-филиал ОАО "РЖД" dvzd.rzd.ru',
         },
       ],
       partners: [
         {
-          icon: "",
+          icon: hiTech,
           title:
             'Точка кипения Hi-Tech Дальневосточной железной дороги - ОАО "РЖД" в Хабаровске',
         },
         {
-          icon: "",
+          icon: apiri,
           title: 'АНО "АПИРИ ХК"',
         },
         {
-          icon: "",
+          icon: sber,
           title: "Дальневосточный банк СберБанка",
         },
       ],
@@ -113,5 +124,9 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  &[name="Кейсодатель"] {
+    align-items: center;
+  }
 }
 </style>

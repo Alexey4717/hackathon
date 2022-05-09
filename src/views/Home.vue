@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hackathon-presentation />
+    <hackathon-presentation :scroll-page-to="scrollPageTo"/>
     <about-hackathon />
     <cards />
     <cases-example />
@@ -15,10 +15,10 @@
 import HackathonPresentation from "@/components/blocks/HackathonPresentation";
 import AboutHackathon from "@/components/blocks/AboutHackathon";
 import Cards from "@/components/blocks/Cards";
-import CasesExample from "@/components/blocks/CasesExample"
-import Participation from "@/components/blocks/Participation"
-import Participants from "@/components/blocks/Participants"
-import CooperationProposals from "@/components/blocks/CooperationProposals"
+import CasesExample from "@/components/blocks/CasesExample";
+import Participation from "@/components/blocks/Participation";
+import Participants from "@/components/blocks/Participants";
+import CooperationProposals from "@/components/blocks/CooperationProposals";
 
 document.title = "Хакатон цифровых профессий";
 
@@ -31,7 +31,22 @@ export default {
     CasesExample,
     Participation,
     Participants,
-    CooperationProposals
+    CooperationProposals,
+  },
+  setup() {
+    const scrollPageTo = (navEl) => {
+      const element = document.querySelector(`#${navEl}`);
+      element.scrollIntoView({ behavior: "smooth" });
+    };
+
+    return {
+      scrollPageTo,
+    };
+  },
+  methods: {
+    handleButtonClick() {
+      this.cards.scrollIntoView({ block: "center", behavior: "smooth" });
+    },
   },
 };
 </script>

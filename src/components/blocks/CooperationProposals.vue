@@ -10,7 +10,7 @@
       src="@/assets/images/consept.webp"
       alt="side-image-2"
     />
-    <h3 :class="$style.heading">Предолжения по сотрудничеству</h3>
+    <h3 :class="$style.heading">Предложения по сотрудничеству</h3>
     <img
       :class="$style.avatar"
       src="@/assets/images/contact-avatar.webp"

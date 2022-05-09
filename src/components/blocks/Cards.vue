@@ -1,5 +1,5 @@
 <template>
-  <h3 :class="$style.heading">
+  <h3 :class="$style.heading" id="cases">
     Направления по созданию кейсов, учавствующие в хакатоне:
   </h3>
   <div :class="$style.wrapper">
@@ -16,53 +16,60 @@
 
 <script>
 import Card from "../ui/Card";
+import cardLayout from "@/assets/images/card-layout.webp";
+import cardFrontend from "@/assets/images/card-frontend.webp";
+import cardPython from "@/assets/images/card-python.webp";
+import cardMobile from "@/assets/images/card-mobile.webp";
+import cardIos from "@/assets/images/card-ios.webp";
+import cardAndroid from "@/assets/images/card-android.webp";
+
 export default {
   name: "Cards",
+  components: {
+    Card,
+  },
   data() {
     return {
       cards: [
         {
           header: "Верстальщик сайтов",
           description: "Вёрстка сайтов по макетам (HTML + CSS)",
-          src: "/src/assets/images/card-layout.webp",
+          src: cardLayout,
           link: "LayoutDeveloper",
         },
         {
           header: "Frontend разработчик",
           description: "Разработка UI на одном из JavaScript фреймворке",
-          src: "/src/assets/images/card-frontend.webp",
+          src: cardFrontend,
           link: "FrontendDeveloper",
         },
         {
           header: "Программист на Python",
           description: "Разработка программы сервера на Django",
-          src: "/src/assets/images/card-python.webp",
+          src: cardPython,
           link: "PythonProgrammer",
         },
         {
           header: "Разработчик мобильных проложений",
           description: "Разработка мобильного UI на React-native",
-          src: "/src/assets/images/card-mobile.webp",
+          src: cardMobile,
           link: "MobileAppDeveloper",
         },
         {
           header: "Программист на IOS",
           description: "Разработка мобильного приложения на IOS",
-          src: "/src/assets/images/card-ios.webp",
+          src: cardIos,
           link: "IosProgrammer",
         },
         {
           header: "Программист на Android",
           description: "Разработка мобильного приложения на Android",
-          src: "/src/assets/images/card-android.webp",
+          src: cardAndroid,
           link: "AndroidProgrammer",
         },
       ],
     };
-  },
-  components: {
-    Card,
-  },
+  }
 };
 </script>
 
@@ -73,7 +80,7 @@ export default {
   font-size: 30px;
   font-weight: bold;
   text-align: right;
-  padding: 100px 0 30px;
+  padding: 50px 0 30px;
 }
 
 .wrapper {

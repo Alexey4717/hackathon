@@ -1,20 +1,20 @@
 <template>
-<div :class="$style.block">
-  {{ icon }}
-  <span :class="$style.title">{{ title }}</span>
-  <span :class="$style.role">{{ role }}</span>
-</div>
+  <div :class="$style.block">
+    <img :class="$style.image" :src="icon" :alt="title" />
+    <span :class="$style.title">{{ title }}</span>
+    <span :class="$style.role">{{ role }}</span>
+  </div>
 </template>
 
 <script>
 export default {
   name: "participant",
   props: {
-    icon: Object,
+    icon: String,
     title: String,
-    role: String
-  }
-}
+    role: String,
+  },
+};
 </script>
 
 <style lang="scss" module>
@@ -22,6 +22,13 @@ export default {
   width: 350px;
   text-align: center;
   padding-top: 70px;
+}
+
+.image {
+  max-width: 90%;
+  object-fit: cover;
+  min-height: 60px;
+  max-height: 160px;
 }
 
 .title {
