@@ -1,5 +1,3 @@
-# [Демо проекта](https://hackathon-g2vt6fl89-alexey4717.vercel.app/)
-
 # Документация:
 
 Инсталяция: npm install
